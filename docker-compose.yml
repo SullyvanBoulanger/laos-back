@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=gamemaster
+      - POSTGRES_PASSWORD=yuna01
+      - POSTGRES_DB=laos
+    ports:
+      - '5432:5432'
